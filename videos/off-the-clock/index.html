@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Off The Clock - Cinematic Trailer</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 500; src: url("assets/fonts/inter-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 700; src: url("assets/fonts/inter-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 800; src: url("assets/fonts/inter-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 900; src: url("assets/fonts/inter-latin-900-normal.woff2") format("woff2"); }
+
+      :root {
+        --cobalt: #050e3d;
+        --chalk: #ffffff;
+        --onyx: #1d1d1d;
+        --coral: #ff557e;
+        --legacy: #05c3f9;
+        --aqua: #00fbf0;
+      }
+
+      html, body {
+        margin: 0; padding: 0;
+        width: 1080px; height: 1920px;
+        overflow: hidden;
+        background: #02061a;
+        font-family: "Inter", "Poppins", Arial, sans-serif;
+        color: var(--chalk);
+      }
+
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #02061a; }
+
+      .clip { position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box; }
+
+      /* ---------- photo stage ---------- */
+      #stage { overflow: hidden; }
+      .photo {
+        position: absolute; left: -180px; top: 0;
+        width: 1440px; height: 1920px;
+        object-fit: cover;
+        will-change: transform;
+      }
+      #hero { transform-origin: 605px 790px; }
+
+      /* colour grade */
+      .grade-cobalt {
+        position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(5,14,61,0.15) 0%, rgba(5,14,61,0.05) 40%, rgba(5,14,61,0.75) 100%);
+        mix-blend-mode: multiply;
+      }
+      .grade-lift {
+        position: absolute; inset: 0;
+        background: linear-gradient(180deg, rgba(5,195,249,0.10) 0%, rgba(0,0,0,0) 45%, rgba(255,85,126,0.10) 100%);
+        mix-blend-mode: screen;
+      }
+      .vignette {
+        position: absolute; inset: 0;
+        background: radial-gradient(ellipse 70% 60% at 50% 45%, rgba(0,0,0,0) 40%, rgba(2,6,26,0.85) 100%);
+      }
+      .leak {
+        position: absolute; width: 1400px; height: 1400px; left: -500px; top: -500px;
+        background: radial-gradient(circle, rgba(255,85,126,0.55) 0%, rgba(255,85,126,0.18) 30%, rgba(255,85,126,0) 65%);
+        mix-blend-mode: screen;
+        opacity: 0;
+      }
+      .flare {
+        position: absolute; left: 0; top: 790px; width: 1080px; height: 6px;
+        background: linear-gradient(90deg, rgba(0,251,240,0) 0%, rgba(0,251,240,0.9) 30%, #ffffff 50%, rgba(5,195,249,0.9) 70%, rgba(5,195,249,0) 100%);
+        box-shadow: 0 0 40px 10px rgba(5,195,249,0.55);
+        transform-origin: 50% 50%;
+        opacity: 0;
+      }
+      .flash { position: absolute; inset: 0; background: #ffffff; opacity: 0; }
+      .scrim { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 55%, rgba(2,6,26,0.72) 0%, rgba(2,6,26,0.35) 60%, rgba(2,6,26,0.1) 100%); opacity: 0; }
+
+      /* letterbox */
+      .bar { position: absolute; left: 0; width: 1080px; height: 150px; background: #000; }
+      .bar.top { top: 0; }
+      .bar.bottom { bottom: 0; }
+
+      /* grain */
+      #grain { position: absolute; inset: 0; overflow: hidden; pointer-events: none; mix-blend-mode: overlay; opacity: 0.35; }
+      #grain .tile {
+        position: absolute; left: -512px; top: -512px;
+        width: 2104px; height: 2944px;
+        background: url("assets/grain.png") repeat;
+        background-size: 512px 512px;
+      }
+
+      /* ---------- type ---------- */
+      .kicker {
+        font-weight: 700; font-size: 34px; letter-spacing: 0.42em; text-transform: uppercase;
+        color: var(--coral);
+      }
+      .small-tracked {
+        font-weight: 500; font-size: 30px; letter-spacing: 0.36em; text-transform: uppercase;
+        color: rgba(255,255,255,0.86);
+      }
+      .display {
+        font-weight: 900; text-transform: uppercase; line-height: 0.92;
+        letter-spacing: -0.02em;
+        text-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      }
+      .ch { display: inline-block; will-change: transform, opacity; }
+
+      /* presents card */
+      #presents { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; text-align: center; }
+      #presents .brand { font-weight: 800; font-size: 44px; letter-spacing: 0.34em; text-transform: uppercase; }
+      #presents .rule { width: 0px; height: 3px; background: var(--coral); }
+      #presents .presents { font-weight: 500; font-size: 30px; letter-spacing: 0.5em; text-transform: uppercase; color: rgba(255,255,255,0.8); }
+
+      /* name card */
+      #name { display: flex; flex-direction: column; justify-content: flex-end; padding: 0 60px 330px; }
+      #name .display { font-size: 118px; letter-spacing: -0.015em; }
+      #name .line { display: block; overflow: hidden; }
+      #name .kicker { margin-bottom: 26px; }
+      #name .underline { height: 6px; width: 0; background: var(--coral); margin-top: 34px; }
+
+      /* montage cuts */
+      .cut { overflow: hidden; background: #02061a; }
+      .cut .photo { transform-origin: 50% 50%; }
+      .bg { background: url("assets/michael.jpg") center / cover no-repeat; }
+      .bracket { position: absolute; width: 90px; height: 90px; border: 5px solid rgba(255,255,255,0.9); }
+      .bracket.tl { left: 110px; top: 330px; border-right: none; border-bottom: none; }
+      .bracket.tr { right: 110px; top: 330px; border-left: none; border-bottom: none; }
+      .bracket.bl { left: 110px; bottom: 330px; border-right: none; border-top: none; }
+      .bracket.br { right: 110px; bottom: 330px; border-left: none; border-top: none; }
+      .cut-tag {
+        position: absolute; left: 110px; bottom: 210px;
+        font-weight: 700; font-size: 30px; letter-spacing: 0.4em; text-transform: uppercase;
+        color: rgba(255,255,255,0.92);
+      }
+      .cut-num {
+        position: absolute; right: 110px; top: 220px;
+        font-weight: 900; font-size: 88px; letter-spacing: 0.04em; color: var(--coral);
+      }
+      .cut-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--coral); margin-right: 18px; vertical-align: middle; }
+
+      /* title card */
+      #title { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+      #title .display { font-size: 210px; letter-spacing: -0.03em; }
+      #title .line { display: block; }
+      #title .tag { margin-top: 44px; }
+      #title .rule { width: 0; height: 5px; background: var(--legacy); margin-top: 40px; }
+
+      /* coming soon */
+      #soon { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 30px; }
+      #soon .display { font-size: 118px; letter-spacing: 0.06em; }
+      #soon .date { font-weight: 500; font-size: 40px; letter-spacing: 0.5em; text-transform: uppercase; color: var(--aqua); }
+
+      /* end card */
+      #end { background: var(--cobalt); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 26px; }
+      #end .group { font-weight: 900; font-size: 92px; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1; }
+      #end .rule { width: 0; height: 4px; background: var(--coral); }
+      #end .broker { font-weight: 500; font-size: 40px; letter-spacing: 0.34em; text-transform: uppercase; color: rgba(255,255,255,0.9); }
+      #end .tag { font-weight: 400; font-size: 30px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 30px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-start="0" data-duration="14.5">
+
+      <!-- 0. PRESENTS -->
+      <div id="presents" class="clip" data-start="0" data-duration="2.5" data-track-index="1">
+        <div class="brand">Real Broker, LLC</div>
+        <div class="rule"></div>
+        <div class="presents">presents</div>
+      </div>
+
+      <!-- 1. PHOTO STAGE -->
+      <div id="stage" class="clip" data-start="2.4" data-duration="11.0" data-track-index="2">
+        <img id="hero" class="photo" src="assets/michael.jpg" alt="" />
+        <div class="grade-cobalt"></div>
+        <div class="grade-lift"></div>
+        <div class="leak" id="leak"></div>
+        <div class="vignette"></div>
+        <div class="flare" id="flare"></div>
+        <div class="scrim" id="scrim"></div>
+        <div class="flash" id="flash"></div>
+      </div>
+
+      <!-- 2. NAME CARD -->
+      <div id="name" class="clip" data-start="2.9" data-duration="2.6" data-track-index="3">
+        <div class="kicker">Starring</div>
+        <div class="display">
+          <span class="line" data-split>Michael</span>
+          <span class="line" data-split>Di Giovanni</span>
+        </div>
+        <div class="underline"></div>
+      </div>
+
+      <!-- 3. MONTAGE CUTS -->
+      <div id="cut1" class="clip cut" data-start="5.55" data-duration="0.7" data-track-index="4">
+        <div class="photo bg"></div>
+        <div class="bracket tl"></div><div class="bracket tr"></div><div class="bracket bl"></div><div class="bracket br"></div>
+        <div class="cut-tag"><span class="cut-dot"></span>The Neon</div>
+        <div class="cut-num">01</div>
+      </div>
+      <div id="cut2" class="clip cut" data-start="6.25" data-duration="0.7" data-track-index="4">
+        <div class="photo bg"></div>
+        <div class="bracket tl"></div><div class="bracket tr"></div><div class="bracket bl"></div><div class="bracket br"></div>
+        <div class="cut-tag"><span class="cut-dot"></span>The Look</div>
+        <div class="cut-num">02</div>
+      </div>
+      <div id="cut3" class="clip cut" data-start="6.95" data-duration="0.7" data-track-index="4">
+        <div class="photo bg"></div>
+        <div class="bracket tl"></div><div class="bracket tr"></div><div class="bracket bl"></div><div class="bracket br"></div>
+        <div class="cut-tag"><span class="cut-dot"></span>The Lights</div>
+        <div class="cut-num">03</div>
+      </div>
+
+      <!-- 4. TITLE -->
+      <div id="title" class="clip" data-start="7.65" data-duration="3.1" data-track-index="3">
+        <div class="display">
+          <span class="line" id="t1">Off The</span>
+          <span class="line" id="t2">Clock</span>
+        </div>
+        <div class="rule"></div>
+        <div class="small-tracked tag">A Chicago Story</div>
+      </div>
+
+      <!-- 5. COMING SOON -->
+      <div id="soon" class="clip" data-start="10.8" data-duration="2.5" data-track-index="3">
+        <div class="display">Coming Soon</div>
+        <div class="date">Fall 2026</div>
+      </div>
+
+      <!-- 6. END CARD -->
+      <div id="end" class="clip" data-start="13.0" data-duration="1.5" data-track-index="2">
+        <div class="group">Chicago Luxe Group</div>
+        <div class="rule"></div>
+        <div class="broker">Real Broker, LLC</div>
+        <div class="tag">Homeowner Advocate</div>
+      </div>
+
+      <!-- LETTERBOX + GRAIN (top of stack) -->
+      <div id="bars" class="clip" data-start="2.4" data-duration="10.7" data-track-index="5" style="pointer-events:none">
+        <div class="bar top" id="barTop"></div>
+        <div class="bar bottom" id="barBottom"></div>
+      </div>
+      <div id="grain" class="clip" data-start="0" data-duration="14.5" data-track-index="6">
+        <div class="tile" id="grainTile"></div>
+      </div>
+
+      <script>
+        (function () {
+          // Split display lines into characters (deterministic)
+          document.querySelectorAll("[data-split]").forEach(function (el) {
+            var text = el.textContent;
+            el.textContent = "";
+            for (var i = 0; i < text.length; i++) {
+              var s = document.createElement("span");
+              s.className = "ch";
+              s.textContent = text[i] === " " ? " " : text[i];
+              el.appendChild(s);
+            }
+          });
+
+          var tl = gsap.timeline({ paused: true });
+
+          /* ---------- 0. PRESENTS (0 - 2.5) ---------- */
+          gsap.set("#presents .brand", { opacity: 0, scale: 1.18, y: 10 });
+          gsap.set("#presents .presents", { opacity: 0, y: 10 });
+          tl.to("#presents .brand", { opacity: 1, scale: 1, y: 0, duration: 1.0, ease: "power2.out" }, 0.25);
+          tl.to("#presents .rule", { width: 140, duration: 0.6, ease: "power3.out" }, 0.7);
+          tl.to("#presents .presents", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 0.95);
+          tl.to("#presents", { opacity: 0, duration: 0.35, ease: "power2.in" }, 2.05);
+
+          /* ---------- 1. STAGE (2.4 - 13.4) ---------- */
+          // Impact cut: flash + snap zoom, then slow cinematic push-in
+          gsap.set("#hero", { scale: 1.28, x: 0, y: 0 });
+          tl.set("#flash", { opacity: 1 }, 2.4);
+          tl.to("#flash", { opacity: 0, duration: 0.45, ease: "power3.out" }, 2.4);
+          tl.to("#hero", { scale: 1.06, duration: 0.9, ease: "power4.out" }, 2.4);
+          tl.to("#hero", { scale: 1.16, y: -30, duration: 10.1, ease: "none" }, 3.3);
+
+          // Letterbox bars slide in
+          gsap.set("#barTop", { y: -150 });
+          gsap.set("#barBottom", { y: 150 });
+          tl.to("#barTop", { y: 0, duration: 0.7, ease: "power3.out" }, 2.4);
+          tl.to("#barBottom", { y: 0, duration: 0.7, ease: "power3.out" }, 2.4);
+
+          // Anamorphic flare on the cut
+          gsap.set("#flare", { scaleX: 0, opacity: 0 });
+          tl.to("#flare", { scaleX: 1, opacity: 1, duration: 0.35, ease: "power3.out" }, 2.45);
+          tl.to("#flare", { opacity: 0, scaleX: 1.6, duration: 0.7, ease: "power2.in" }, 2.82);
+
+          // Light leak drifts through
+          tl.to("#leak", { opacity: 0.9, x: 300, y: 250, duration: 2.4, ease: "sine.inOut" }, 2.5);
+          tl.to("#leak", { opacity: 0, x: 900, y: 500, duration: 2.2, ease: "sine.inOut" }, 4.9);
+
+          // Camera shake on the title slam (7.75)
+          tl.to("#hero", { x: -14, duration: 0.06, ease: "none" }, 7.75);
+          tl.to("#hero", { x: 12, duration: 0.06, ease: "none" }, 7.81);
+          tl.to("#hero", { x: -8, duration: 0.06, ease: "none" }, 7.87);
+          tl.to("#hero", { x: 0, duration: 0.08, ease: "power2.out" }, 7.93);
+
+          // Scrim behind title + coming soon cards
+          tl.to("#scrim", { opacity: 1, duration: 0.3, ease: "power2.out" }, 7.6);
+          tl.to("#scrim", { opacity: 0, duration: 0.4, ease: "power2.in" }, 12.9);
+
+          // Fade out into end card
+          tl.to("#stage", { opacity: 0, duration: 0.5, ease: "power2.in" }, 12.9);
+          tl.to("#bars", { opacity: 0, duration: 0.4, ease: "power2.in" }, 12.9);
+
+          /* ---------- 2. NAME CARD (2.9 - 5.5) ---------- */
+          gsap.set("#name .kicker", { opacity: 0, x: -30 });
+          gsap.set("#name .ch", { opacity: 0, y: 140 });
+          tl.to("#name .kicker", { opacity: 1, x: 0, duration: 0.5, ease: "power3.out" }, 2.95);
+          tl.to("#name .ch", { opacity: 1, y: 0, duration: 0.7, ease: "power4.out", stagger: 0.035 }, 3.05);
+          tl.to("#name .underline", { width: 380, duration: 0.6, ease: "power3.out" }, 3.5);
+          tl.to("#name", { opacity: 0, y: -60, duration: 0.35, ease: "power2.in" }, 5.15);
+
+          /* ---------- 3. MONTAGE CUTS ---------- */
+          // cut1: neon line, top-left  (image point ~ (0.35, 0.13) of 1440x1920 => 504, 250)
+          gsap.set("#cut1 .photo", { transformOrigin: "504px 250px", scale: 2.1 });
+          tl.to("#cut1 .photo", { scale: 2.35, duration: 0.7, ease: "none" }, 5.55);
+          // cut2: face close-up (605, 790)
+          gsap.set("#cut2 .photo", { transformOrigin: "605px 790px", scale: 2.3 });
+          tl.to("#cut2 .photo", { scale: 2.55, duration: 0.7, ease: "none" }, 6.25);
+          // cut3: string lights, right side (~ (0.82, 0.14) => 1180, 270)
+          gsap.set("#cut3 .photo", { transformOrigin: "1180px 270px", scale: 2.0 });
+          tl.to("#cut3 .photo", { scale: 2.25, duration: 0.7, ease: "none" }, 6.95);
+
+          ["#cut1", "#cut2", "#cut3"].forEach(function (id, i) {
+            var t0 = 5.55 + i * 0.7;
+            gsap.set(id + " .bracket", { scale: 1.4, opacity: 0 });
+            gsap.set(id + " .cut-tag", { opacity: 0, x: -20 });
+            gsap.set(id + " .cut-num", { opacity: 0, y: 20 });
+            tl.to(id + " .bracket", { scale: 1, opacity: 1, duration: 0.18, ease: "power3.out" }, t0);
+            tl.to(id + " .cut-tag", { opacity: 1, x: 0, duration: 0.22, ease: "power2.out" }, t0 + 0.05);
+            tl.to(id + " .cut-num", { opacity: 1, y: 0, duration: 0.22, ease: "power2.out" }, t0 + 0.05);
+          });
+
+          /* ---------- 4. TITLE (7.65 - 10.75) ---------- */
+          gsap.set("#t1", { opacity: 0, scale: 1.6 });
+          gsap.set("#t2", { opacity: 0, scale: 1.6 });
+          gsap.set("#title .tag", { opacity: 0, y: 20 });
+          tl.to("#t1", { opacity: 1, scale: 1, duration: 0.32, ease: "power4.out" }, 7.7);
+          tl.to("#t2", { opacity: 1, scale: 1, duration: 0.32, ease: "power4.out" }, 7.85);
+          tl.to("#title .rule", { width: 260, duration: 0.5, ease: "power3.out" }, 8.05);
+          tl.to("#title .tag", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 8.2);
+          tl.to("#title .display", { scale: 1.06, duration: 2.4, ease: "none" }, 8.2);
+          tl.to("#title", { opacity: 0, duration: 0.35, ease: "power2.in" }, 10.4);
+
+          /* ---------- 5. COMING SOON (10.8 - 13.3) ---------- */
+          gsap.set("#soon .display", { opacity: 0 });
+          gsap.set("#soon .date", { opacity: 0, y: 16 });
+          // flicker like a neon tube warming up
+          var flick = [0.9, 0.1, 0.7, 0.2, 1, 0.35, 1];
+          for (var f = 0; f < flick.length; f++) {
+            tl.set("#soon .display", { opacity: flick[f] }, 10.85 + f * 0.07);
+          }
+          tl.to("#soon .display", { opacity: 1, duration: 0.2 }, 11.35);
+          tl.to("#soon .date", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 11.4);
+          tl.to("#soon", { opacity: 0, duration: 0.35, ease: "power2.in" }, 12.9);
+
+          /* ---------- 6. END CARD (13.0 - 14.5) ---------- */
+          gsap.set("#end", { opacity: 0 });
+          gsap.set("#end .group", { opacity: 0, y: 30 });
+          gsap.set("#end .broker", { opacity: 0, y: 16 });
+          gsap.set("#end .tag", { opacity: 0 });
+          tl.to("#end", { opacity: 1, duration: 0.4, ease: "power2.out" }, 13.0);
+          tl.to("#end .group", { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 13.15);
+          tl.to("#end .rule", { width: 160, duration: 0.5, ease: "power3.out" }, 13.4);
+          tl.to("#end .broker", { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 13.55);
+          tl.to("#end .tag", { opacity: 1, duration: 0.5, ease: "power2.out" }, 13.85);
+
+          /* ---------- FILM GRAIN (deterministic jitter) ---------- */
+          var seed = 7;
+          function rnd() { seed = (seed * 1664525 + 1013904223) % 4294967296; return seed / 4294967296; }
+          for (var g = 0; g < 14.5 / 0.08; g++) {
+            tl.set("#grainTile", { x: Math.floor(rnd() * 512), y: Math.floor(rnd() * 512) }, g * 0.08);
+          }
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["main"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>
