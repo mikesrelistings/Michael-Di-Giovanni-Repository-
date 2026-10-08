@@ -19,6 +19,11 @@ Source plans this builds on (uploaded by Michael, authored by Grok Bot / Codex o
 | PC power settings | Already set to never sleep. Laptop is manually shut down ~30 min somewhere between 5:30–6:00 PM daily. |
 | Daily shutdown handling | **Flexible for now** — no auto-pause/resume scripted around it yet. Revisit once the migration is live and we see how it actually plays out. |
 
+## Host hardware (confirmed from nameplate photo, Oct 8)
+- **MSI Prestige A16 AI+**, SKU `A3HMG-016US-SSARI36532GXXDX11NGP`, S/N `K2409N0076251`, manufactured 2024/09.
+- Current-gen AMD Ryzen AI chipset — virtualization/WSL2 support is standard on this line, no hardware blocker.
+- Still need: exact Windows version/build from Settings > System > About (not expected to be an issue, just unconfirmed).
+
 ## Still open
 - **"Jarvis"** — Michael's own private harness, built in a separate Claude Code session (not this repo). Candidates from his session list, unconfirmed: *"Personal AI agent system profile"*, *"Real estate AI agent system"*, *"Grokbot agents wholesale workflow"*. Needs Michael to confirm which one before Jarvis is wired into the rotation.
 - Exact coordination page ("clicker page") Michael is setting up for Codex/Hermes — tool/link not yet shared.
