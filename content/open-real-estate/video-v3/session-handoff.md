@@ -28,6 +28,16 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
+## Delivered (4:30 PM CT)
+
+Codex delivered the review master: `CLG-Open-Real-Estate-Review-Ready.mp4` (Drive ID 12PV_v0hAICu0BkSZNeTPoVCq_cGwIFUh, 33.5 MB, 59.8s, 1080x1920, 30 fps), plus VERIFY.md and PRODUCTION.md, in Content - Chicago Luxe > Videos > CLG Open Real Estate Short. HeyGen used 10 add-on credits (47 left). Higgsfield used 0.
+
+Claude Code review of VERIFY.md (the MP4 itself is over the 10 MB Drive download limit, so it was not watched here):
+- Pass: resolution, frame rate, codecs, length, -14.3 LUFS, phone number, footer and logo per Codex.
+- Off spec: peak -0.5 dBFS (spec is -1 dBTP or lower). 165 spoken words against the 146-word script; Codex added a "required spoken closing". Expressiveness medium, not low.
+- Not confirmed in VERIFY: Source chip, launch label, Real Broker disclosure, "Not legal or tax advice." card, captions word for word.
+- Still open: Grok Bot CoS QA, Michael's review, "post it".
+
 ## Current Codex instruction (3:05 PM CT)
 
 `codex-final-handoff.md` in this folder is the one message Michael pastes into Codex. It is self-contained: credit approval, v14 recipe, script, display-wall cards, on-screen items, specs, status doc, delivery and the "post it" gate. It replaces the two prompts below.
