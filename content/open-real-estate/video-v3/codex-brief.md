@@ -30,6 +30,7 @@ Canonical record: `Codex-1\outputs\updated-listing-youtube-short-2026-10-24\PROD
 - Topic: HousingWire, Open Real Estate (Oct 26, 2026): https://www.housingwire.com/articles/open-real-estate-data-initiative/
 - Private Drive review master for Michael. Not posted, not scheduled.
 - **Michael's standing rule for every video or carousel render:** put the direct, clickable link (and the file itself when the chat allows it) right in the chat with Michael, so he can open and view it in one tap.
+- **Status doc:** after each step (quote, HeyGen clips, edit, QA, review master), update a Google Doc named "STATUS - CLG Open Real Estate Short" in Content - Chicago Luxe with one line on what is done and what is next. Put the review master link there too. Claude Code checks this doc every 30 minutes and reports changes to Michael, so he never has to ask where the video is.
 
 ## Match v14 (Michael, Oct 27)
 

@@ -9,7 +9,8 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 - Production brief is final: `codex-brief.md` (this folder; Drive copy "Codex Brief v2 - CLG Open Real Estate Short" in Content - Chicago Luxe; the first Drive copy is marked superseded). Caption lines: `script-lines.txt` (14 lines, 146 words, future-tense edit applied).
 - The faceless ElevenLabs "Lara" build from another Claude Code session is retired. Its Drive folder ("Open Real Estate Reel - build files (Claude Code, 2026-10-27)") now has `SUPERSEDED - READ FIRST.md`; its own files were left unchanged.
 - Nothing has been rendered, spent, uploaded, scheduled or posted for this video.
-- **Next step: Codex produces the paid-credit quote.**
+- Michael pasted the kickoff prompt into Codex around 1:30 PM CT. Checked at 1:59 PM CT: no new video files in Drive and no HeyGen, Higgsfield or Codex emails in the last 24 hours. Most likely Codex is holding its credit quote for Michael's yes (inferred; Claude Code cannot see Codex).
+- **Next step: Michael approves the HeyGen credits in Codex and asks for the status doc (prompt below).** Claude Code checks Drive every 30 minutes for the status doc and the review master.
 
 ## Next actions, in order
 
@@ -26,6 +27,10 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 ## Kickoff prompt for Codex (Michael can paste this)
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
+
+## Go-ahead and status prompt for Codex (Michael, after the kickoff)
+
+> Approved: use the HeyGen credits this video needs, no need to ask again. Start now. After each step (quote, HeyGen clips, edit, QA, review master), update a Google Doc named "STATUS - CLG Open Real Estate Short" in Content - Chicago Luxe with one line on what's done and what's next. Put the review master link in that doc and in my chat. Do not post or schedule until I say "post it."
 
 ## Standing rule from Michael (Oct 27)
 
