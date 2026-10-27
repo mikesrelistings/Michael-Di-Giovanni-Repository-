@@ -93,7 +93,8 @@ Production additions (agent decisions, already settled):
 
 ## Presenter
 
-- Use the same approved, consistent medium-blue standing suit as v14 (look ID in Codex's v14 record). Change wardrobe only if Michael explicitly asks for a new one.
+- **v2 (Michael, Oct 27, after v1):** burgundy suit with grey, or burgundy with whatever pairs best (look 5 in `content/wardrobe/video-outfit-rotation.md`). The voice was also adjusted with Codex. v1 used the blue look `0987be3d0ed06d581d715e3c27b6411e` ("Michael CLG - Tailored Blue Athletic v9").
+- v1 used the same approved, consistent medium-blue standing suit as v14. Change wardrobe only when Michael explicitly asks, as he did for v2.
 - Michael stands in every presenter shot. HeyGen Avatar III, low expressiveness.
 - Never reuse: seated looks `d3d5b3791a1444d3b86b117e92c9d7d8` and `42ea57f679e647129cdb71b65497277f`; Avatar IV render `88f283fc57d5aaac257921941f0ad528`; the v3 talking-presenter master; the narration-only Evidence Desk versions.
 

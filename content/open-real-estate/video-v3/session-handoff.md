@@ -28,7 +28,13 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
-## Delivered (4:30 PM CT)
+## v2 in progress (Codex, from 4:45 PM CT)
+
+Michael and Codex adjusted the voice, and v2 switches to a burgundy suit with grey (or burgundy with whatever pairs best). Lanes, so the two agents never overlap:
+- Codex: all production (voice, suit, HeyGen, edit, render, Drive upload).
+- Claude Code: read-only watching and review. No HeyGen, Higgsfield or render jobs; no edits to Codex's Drive files or the STATUS doc. Posts the v2 link in chat and checks its VERIFY.md against this brief.
+
+## Delivered v1 (4:30 PM CT)
 
 Codex delivered the review master: `CLG-Open-Real-Estate-Review-Ready.mp4` (Drive ID 12PV_v0hAICu0BkSZNeTPoVCq_cGwIFUh, 33.5 MB, 59.8s, 1080x1920, 30 fps), plus VERIFY.md and PRODUCTION.md, in Content - Chicago Luxe > Videos > CLG Open Real Estate Short. HeyGen used 10 add-on credits (47 left). Higgsfield used 0.
 
@@ -53,7 +59,7 @@ Every video or carousel render goes straight into the chat with Michael: a direc
 ## Decisions already settled (do not reopen with Michael)
 
 - Version: HeyGen, Michael on camera. The Lara build is retired.
-- Wardrobe: the approved consistent medium-blue standing suit from v14, unless Michael explicitly requests a new one.
+- Wardrobe: v1 used the medium-blue standing suit from v14. v2 is burgundy with grey (Michael, Oct 27).
 - Script: "sends" changed to "will send"; on-screen "Target launch: early 2027" label.
 - Disclosure on screen: "I'm an agent with Real Broker, LLC. Real REMAX Group is one of the four Open Real Estate founders."
 - Footer on every frame: "Chicago Luxe Group | powered by Real Broker, LLC" with the Real logo; "Source: HousingWire" chip; final card "Not legal or tax advice."
