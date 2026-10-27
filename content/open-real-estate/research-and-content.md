@@ -27,6 +27,7 @@ How these were checked: web search of trade press (HousingWire, Real Estate News
 | Listings use nationally standardized fields | [7] |
 | The founding companies will fund the initial infrastructure | [7] |
 | Critics call it "a proposal, not a platform": there is no software to log into today | [7] [29] |
+| HousingWire's podcast: built to handle both private and publicly marketed listings while preserving consumer choice; open challenges are picking tech partners, data-sharing agreements and antitrust concerns | [30] |
 | Designed to work alongside MLSs. Founders say it is not a national MLS and does not replace local MLSs | [4] [6] [9] |
 | Free for any brokerage to join as a participating member | [1] [3] |
 | Early participants named: Brown Harris Stevens, Lamacchia Realty, Samson Properties, Windermere | [4] [5] |
@@ -257,6 +258,7 @@ Starred sources are the ones to click before posting.
 27. BAM, founding CEOs interview: https://nowbam.com/founding-ceos-reveal-whats-next-for-open-real-estate-in-exclusive-interview/
 28. Propmodo, alliance to counter private listing networks: https://propmodo.com/major-brokerages-form-alliance-to-counter-private-listing-networks/
 29. Robert Schantz (Substack, opinion), "Four Giants Just Drew the Line": https://robertschantz.substack.com/p/four-giants-just-drew-the-line-independents
+30. HousingWire podcast, "Open Real Estate: Four Brokerage Giants Bet on a More Transparent Housing Market": https://www.housingwire.com/podcast/open-real-estate-four-brokerage-giants-bet-on-a-more-transparent-housing-market/
 
 Source posts reviewed:
 - https://www.instagram.com/reel/De-GyW5SluM/ (transcript via vidIQ)
