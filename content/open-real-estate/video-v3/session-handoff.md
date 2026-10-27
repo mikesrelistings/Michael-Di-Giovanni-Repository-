@@ -9,7 +9,7 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 - Production brief is final: `codex-brief.md` (this folder; Drive copy "Codex Brief v2 - CLG Open Real Estate Short" in Content - Chicago Luxe; the first Drive copy is marked superseded). Caption lines: `script-lines.txt` (14 lines, 146 words, future-tense edit applied).
 - The faceless ElevenLabs "Lara" build from another Claude Code session is retired. Its Drive folder ("Open Real Estate Reel - build files (Claude Code, 2026-10-27)") now has `SUPERSEDED - READ FIRST.md`; its own files were left unchanged.
 - Nothing has been rendered, spent, uploaded, scheduled or posted for this video.
-- Michael pasted the kickoff prompt into Codex around 1:30 PM CT. Checked at 1:59 PM CT: no new video files in Drive and no HeyGen, Higgsfield or Codex emails in the last 24 hours. Most likely Codex is holding its credit quote for Michael's yes (inferred; Claude Code cannot see Codex).
+- Michael pasted the kickoff prompt into Codex around 1:30 PM CT. Checked at 1:59, 2:15 and 2:31 PM CT: no status doc, no new video files in Drive and no HeyGen, Higgsfield or Codex emails in the last 24 hours. Most likely Codex is holding its credit quote for Michael's yes (inferred; Claude Code cannot see Codex).
 - **Next step: Michael approves the HeyGen credits in Codex and asks for the status doc (prompt below).** Claude Code checks Drive every 30 minutes for the status doc and the review master.
 
 ## Next actions, in order
