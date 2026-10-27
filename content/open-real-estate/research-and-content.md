@@ -34,6 +34,8 @@ How these were checked: web search of trade press (HousingWire, Real Estate News
 | Compass publicly welcomed it, saying it "will return the power back to the creator of the listing" | [10] |
 | Founders published an open letter, "Housing Markets Must Remain Open To All." It says restricting listing information can limit buyer access and reduce seller exposure, and that sellers should understand how their home is marketed, who it reaches, and the trade-offs | [26] [28] |
 | The letter's four principles: expanding buyer opportunity, empowering informed seller decisions, protecting data integrity, promoting fair competition | [26] [28] |
+| Founding CEOs who joined BAM's Oct 26 livestream: Leo Pareja (AGNT), Tamir Poleg (Real REMAX Group), Chris Kelly (HomeServices of America), Chris Czarnecki (Keller Williams) | [27] |
+| On that livestream, Poleg said Compass was invited to be a founding member. Single source (BAM); attribute it if used | [27] |
 
 ### Real REMAX Group (your side of the table)
 | Fact | Source |
@@ -83,7 +85,7 @@ Use both, attributed. That honesty is your edge over the cheerleading reels.
 | Carousel (De-CNOvk13A), BAM (nowbam) collab with tomtoole3rd, 2 slides | Four founders (AGNT, HomeServices, Keller Williams, Real REMAX Group) announced Open Real Estate | **Verified** |
 | Carousel caption | Founders' open letter warns private listings and fragmented data could limit buyer access and reduce seller exposure | **Verified** |
 | Carousel caption | BAM went live with executives from all four founders | BAM's own claim. BAM did publish an interview with the founding CEOs [27]; the livestream itself was not checked |
-| Carousel slide 1 | "eXp CEO on how this helps the American consumer" | **Not checked.** Only slide 1 and the caption were in the screenshot; slide 2 was not seen |
+| Carousel slide 1 | "eXp CEO on how this helps the American consumer" | The executive is Leo Pareja (AGNT, eXp's parent) [27]. **What he said was not checked.** Slide 2 was not seen and the livestream video was not found |
 
 ---
 
