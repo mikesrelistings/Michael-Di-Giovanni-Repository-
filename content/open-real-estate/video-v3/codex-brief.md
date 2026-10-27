@@ -29,6 +29,7 @@ Canonical record: `Codex-1\outputs\updated-listing-youtube-short-2026-10-24\PROD
 - 9:16, 1080x1920, 30 fps, H.264/AAC, about 60 seconds.
 - Topic: HousingWire, Open Real Estate (Oct 26, 2026): https://www.housingwire.com/articles/open-real-estate-data-initiative/
 - Private Drive review master for Michael. Not posted, not scheduled.
+- **Michael's standing rule for every video or carousel render:** put the direct, clickable link (and the file itself when the chat allows it) right in the chat with Michael, so he can open and view it in one tap.
 
 ## Script (final production wording; 146 words, about 52 to 58 seconds of speech)
 

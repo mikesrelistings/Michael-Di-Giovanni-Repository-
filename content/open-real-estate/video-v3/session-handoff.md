@@ -26,6 +26,10 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read the brief "Codex Brief - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Build it with my HeyGen avatar in the v14 medium-blue standing suit and a Higgsfield background, using the clg-reel template. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Deliver a private review master to Drive. Do not post or schedule anything until I say "post it".
 
+## Standing rule from Michael (Oct 27)
+
+Every video or carousel render goes straight into the chat with Michael: a direct, clickable link, plus the file itself when the chat allows it. Make it one tap for him to view.
+
 ## Decisions already settled (do not reopen with Michael)
 
 - Version: HeyGen, Michael on camera. The Lara build is retired.
