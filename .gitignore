@@ -1,0 +1,3 @@
+# Lead lists contain private names and addresses. Never commit them.
+*.csv
+__pycache__/
