@@ -32,6 +32,8 @@ How these were checked: web search of trade press (HousingWire, Real Estate News
 | Not live. Target Q1 2027. Technology vendor RFP still open | [3] [4] [6] |
 | How the data makes money is not decided. Tamir Poleg (Real REMAX Group CEO) said the focus right now is building the platform | [6] [11] |
 | Compass publicly welcomed it, saying it "will return the power back to the creator of the listing" | [10] |
+| Founders published an open letter, "Housing Markets Must Remain Open To All." It says restricting listing information can limit buyer access and reduce seller exposure, and that sellers should understand how their home is marketed, who it reaches, and the trade-offs | [26] [28] |
+| The letter's four principles: expanding buyer opportunity, empowering informed seller decisions, protecting data integrity, promoting fair competition | [26] [28] |
 
 ### Real REMAX Group (your side of the table)
 | Fact | Source |
@@ -78,7 +80,10 @@ Use both, attributed. That honesty is your edge over the cheerleading reels.
 | Reel 3 | These are the number 2, 3, 4 and 5 real estate companies in the world | **Not verified.** Keep out |
 | Reel 3 | Response to the lawsuits and fractured listings | **Verified** as context |
 | Reel 3 background | 30-year fixed at 7.41% (HousingWire ticker) | **Not verified.** Keep out |
-| Carousel (De-CNOvk13A) | Unknown | **Not read.** Instagram is blocked here and vidIQ cannot read carousels. Paste the slide text if you want it graded |
+| Carousel (De-CNOvk13A), BAM (nowbam) collab with tomtoole3rd, 2 slides | Four founders (AGNT, HomeServices, Keller Williams, Real REMAX Group) announced Open Real Estate | **Verified** |
+| Carousel caption | Founders' open letter warns private listings and fragmented data could limit buyer access and reduce seller exposure | **Verified** |
+| Carousel caption | BAM went live with executives from all four founders | BAM's own claim. BAM did publish an interview with the founding CEOs [27]; the livestream itself was not checked |
+| Carousel slide 1 | "eXp CEO on how this helps the American consumer" | **Not checked.** Only slide 1 and the caption were in the screenshot; slide 2 was not seen |
 
 ---
 
@@ -173,7 +178,7 @@ Every frame: Real logo + "Real Broker, LLC" in the footer. Frame 2 adds: "I'm an
 | 5 | Chicago is ground zero | April: Chicago's MLS, MRED, takes its Private Listing Network national, backed by Compass. May: Zillow sues MRED and Compass. Sept 15: a federal judge denies Zillow's injunction and sends its MRED claims to arbitration. Not a final ruling. |
 | 6 | The fine print | It isn't live yet. Target: early 2027. Brokers can still mark a listing participant-only, with no public marketing. How the data makes money is not decided. |
 | 7 | Does private cost you money? | Zillow (2023 to 2024 sales): off-MLS homes sold for a median 1.5% less. Compass (its own data): private-first marketing sold for 4.6% more. Both companies have a stake in the answer. |
-| 8 | My take | You own your listing. Who sees it should be your decision, made with real numbers, not a sales pitch. That matters most when time is short: a job move, a divorce, a missed mortgage payment. Full disclosure: I'm an agent with Real. Real REMAX Group is one of the four founders. |
+| 8 | My take | You own your listing. Even the founders' open letter says sellers should understand how their home is marketed, who it reaches, and the trade-offs. Decide with real numbers, not a sales pitch. That matters most when time is short: a job move, a divorce, a missed mortgage payment. Full disclosure: I'm an agent with Real. Real REMAX Group is one of the four founders. |
 | 9 | 5 questions to ask your listing agent | 1. Will my home go on the MLS, and on what date? 2. Will it show on Zillow, Realtor.com and Redfin? 3. If you recommend private or coming soon first, for how long, and what data backs that for my price range? 4. Could your brokerage end up representing the buyer too? 5. If we relist, what happens to my days on market and price history? |
 | 10 | Selling in 2027? | DM me EXPOSURE for the full checklist. Michael Di Giovanni / Chicago Luxe Group / Real Broker, LLC + Real logo |
 
@@ -243,8 +248,11 @@ Starred sources are the ones to click before posting.
 23. Inman, Zillow study coverage, Mar 24, 2025: https://www.inman.com/2025/03/24/homesellers-have-lost-1b-through-private-deals-since-2023-zillow/
 24. \* HousingWire, Reffkin defends private exclusives (Compass 4.6% figure): https://www.housingwire.com/articles/reffkin-private-exclusives-mls/
 25. HousingWire, off-MLS studies conflict on price: https://www.housingwire.com/articles/off-mls-antitrust-scrutiny/
+26. \* BAM, launch article and open letter: https://nowbam.com/4-major-brokerages-join-forces-to-launch-open-real-estate-amid-private-listing-battles/
+27. BAM, founding CEOs interview: https://nowbam.com/founding-ceos-reveal-whats-next-for-open-real-estate-in-exclusive-interview/
+28. Propmodo, alliance to counter private listing networks: https://propmodo.com/major-brokerages-form-alliance-to-counter-private-listing-networks/
 
-Source posts reviewed (transcripts via vidIQ):
-- https://www.instagram.com/reel/De-GyW5SluM/
-- https://www.instagram.com/reel/DfAFq7ZBQ1x/
-- https://www.instagram.com/p/De-CNOvk13A/ (carousel, not read)
+Source posts reviewed:
+- https://www.instagram.com/reel/De-GyW5SluM/ (transcript via vidIQ)
+- https://www.instagram.com/reel/DfAFq7ZBQ1x/ (transcript via vidIQ)
+- https://www.instagram.com/p/De-CNOvk13A/ (slide 1 and caption from Michael's screenshot; slide 2 not seen)
