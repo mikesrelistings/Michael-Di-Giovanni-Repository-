@@ -28,6 +28,10 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
+## Current Codex instruction (3:05 PM CT)
+
+`codex-final-handoff.md` in this folder is the one message Michael pastes into Codex. It is self-contained: credit approval, v14 recipe, script, display-wall cards, on-screen items, specs, status doc, delivery and the "post it" gate. It replaces the two prompts below.
+
 ## Go-ahead and status prompt for Codex (Michael, after the kickoff)
 
 > Approved: use the HeyGen credits this video needs, no need to ask again. Start now. After each step (quote, HeyGen clips, edit, QA, review master), update a Google Doc named "STATUS - CLG Open Real Estate Short" in Content - Chicago Luxe with one line on what's done and what's next. Put the review master link in that doc and in my chat. Do not post or schedule until I say "post it."
