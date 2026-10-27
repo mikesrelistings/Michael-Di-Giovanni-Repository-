@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Open Real Estate Short</title>
+<style>
+  :root {
+    --cobalt: #050E3D;
+    --chalk: #FFFFFF;
+    --onyx: #1D1D1D;
+    --slate: #615B56;
+    --seaglass: #BFDDDB;
+    --coral: #FF557E;
+    --legacy: #05C3F9;
+    --aqua: #00FBF0;
+    --panel: rgba(255, 255, 255, 0.06);
+    --line: rgba(191, 221, 219, 0.28);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; background: var(--cobalt); overflow: hidden; }
+  body { font-family: "Inter", Arial, sans-serif; color: var(--chalk); position: relative; }
+  .display { font-family: "Inter Display", "Inter", Arial, sans-serif; font-weight: 900; letter-spacing: -0.02em; line-height: 0.98; }
+
+  /* Background texture */
+  .bg-glow { position: absolute; inset: 0; background:
+      radial-gradient(900px 700px at 85% 10%, rgba(5, 195, 249, 0.16), transparent 60%),
+      radial-gradient(800px 800px at 0% 95%, rgba(0, 251, 240, 0.10), transparent 60%); }
+  .bg-grid { position: absolute; inset: 0; opacity: 0.07;
+      background-image: linear-gradient(var(--seaglass) 1px, transparent 1px), linear-gradient(90deg, var(--seaglass) 1px, transparent 1px);
+      background-size: 90px 90px; }
+
+  /* Persistent chrome */
+  .progress { position: absolute; top: 0; left: 0; height: 10px; background: var(--coral); width: 0; }
+  .brand { position: absolute; top: 120px; left: 80px; right: 80px; display: flex; align-items: center; justify-content: space-between; }
+  .brand img { height: 46px; display: block; }
+  .brand .who { text-align: right; font-size: 26px; line-height: 1.25; color: var(--seaglass); font-weight: 600; }
+  .brand .who b { color: var(--chalk); font-weight: 800; }
+
+  /* Scenes */
+  .scene { position: absolute; left: 80px; right: 80px; top: 280px; bottom: 470px; opacity: 0; display: flex; flex-direction: column; }
+  .kicker { font-size: 34px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--seaglass); margin-bottom: 28px; }
+  .h1 { font-size: 132px; }
+  .h2 { font-size: 104px; }
+  .h3 { font-size: 78px; }
+  .coral { color: var(--coral); }
+  .aqua { color: var(--aqua); }
+  .sea { color: var(--seaglass); }
+  .body { font-size: 40px; line-height: 1.3; font-weight: 500; }
+  .small { font-size: 30px; line-height: 1.35; color: var(--seaglass); font-weight: 500; }
+
+  .chips { display: grid; grid-template-columns: 1fr; gap: 22px; margin-top: 48px; }
+  .chip { background: var(--panel); border: 2px solid var(--line); border-left: 10px solid var(--legacy); border-radius: 18px; padding: 26px 32px; font-size: 48px; font-weight: 800; }
+  .chip span { display: block; font-size: 30px; font-weight: 500; color: var(--seaglass); margin-top: 6px; }
+  .chip.real { border-left-color: var(--coral); }
+
+  .flow { position: relative; margin-top: 40px; height: 560px; }
+  .house { position: absolute; left: 330px; top: 0; width: 260px; height: 200px; border-radius: 28px; background: var(--chalk); color: var(--cobalt); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .house svg { width: 110px; height: 100px; }
+  .house div { font-size: 30px; font-weight: 800; margin-top: 6px; }
+  .flow svg.lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .dest { position: absolute; top: 410px; width: 290px; height: 150px; border-radius: 20px; background: var(--panel); border: 3px solid var(--aqua); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 36px; font-weight: 800; line-height: 1.1; padding: 10px; }
+
+  .tl { margin-top: 36px; display: flex; flex-direction: column; gap: 26px; }
+  .tl-item { display: grid; grid-template-columns: 200px 1fr; gap: 26px; align-items: start; background: var(--panel); border-radius: 20px; padding: 28px 30px; border: 2px solid var(--line); }
+  .tl-item .when { font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 44px; color: var(--aqua); line-height: 1.05; }
+  .tl-item .what { font-size: 38px; line-height: 1.25; font-weight: 600; }
+  .tl-item .what i { font-style: normal; color: var(--seaglass); font-size: 30px; display: block; margin-top: 8px; font-weight: 500; }
+
+  .rows { margin-top: 44px; display: flex; flex-direction: column; gap: 28px; }
+  .row { border-left: 12px solid var(--coral); background: var(--panel); border-radius: 0 20px 20px 0; padding: 30px 34px; }
+  .row .big { font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 62px; line-height: 1.02; }
+  .row .sub { font-size: 34px; color: var(--seaglass); margin-top: 10px; font-weight: 500; }
+
+  .cards { margin-top: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .card { background: var(--panel); border: 2px solid var(--line); border-radius: 24px; padding: 34px 30px; min-height: 520px; display: flex; flex-direction: column; }
+  .card .src { font-size: 34px; font-weight: 900; letter-spacing: 0.1em; }
+  .card .meta { font-size: 26px; color: var(--seaglass); margin-top: 6px; line-height: 1.3; }
+  .card .num { font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 138px; line-height: 1; margin-top: 40px; }
+  .card .lbl { font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 52px; margin-top: 4px; }
+  .card .desc { font-size: 30px; line-height: 1.3; margin-top: auto; color: var(--chalk); }
+  .stamp { margin-top: 36px; align-self: center; border: 6px solid var(--coral); color: var(--coral); border-radius: 18px; padding: 18px 34px; font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 64px; transform: rotate(-3deg); }
+
+  .pill { display: inline-block; margin-top: 50px; background: var(--coral); color: var(--chalk); border-radius: 999px; padding: 30px 56px; font-family: "Inter Display", "Inter", sans-serif; font-weight: 900; font-size: 76px; align-self: flex-start; }
+
+  .endcard { position: absolute; inset: 0; background: var(--cobalt); opacity: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  .endcard .clg { width: 560px; }
+  .endcard .name { font-size: 64px; font-weight: 900; font-family: "Inter Display", "Inter", sans-serif; margin-top: 50px; }
+  .endcard .co { font-size: 36px; color: var(--seaglass); margin-top: 10px; font-weight: 600; }
+  .endcard .realrow { display: flex; align-items: center; gap: 28px; margin-top: 60px; }
+  .endcard .realrow img { height: 69px; }
+  .endcard .realrow div { font-size: 44px; font-weight: 800; }
+  .endcard .dm { margin-top: 70px; font-size: 44px; font-weight: 800; color: var(--coral); }
+
+  /* Captions */
+  .cap { position: absolute; left: 70px; right: 70px; top: 1470px; display: flex; justify-content: center; }
+  .cap div { background: rgba(0, 0, 0, 0.55); border-radius: 18px; padding: 18px 28px; font-size: 42px; line-height: 1.25; font-weight: 700; text-align: center; max-width: 940px; }
+</style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+  <div class="progress" id="progress"></div>
+
+  <div class="brand" id="brand">
+    <img src="assets/real-logo-white-transparent.png" alt="Real">
+    <div class="who"><b>Michael Di Giovanni</b><br>Chicago Luxe Group | Real Broker, LLC</div>
+  </div>
+
+  <!-- S1: Hook -->
+  <section class="scene" data-start="0" data-end="3">
+    <div class="kicker" data-in="0.1">Chicago home sellers</div>
+    <div class="display h1" data-in="0.25">WHO SEES<br>YOUR HOME</div>
+    <div class="display h1 coral" data-in="0.6">IN 2027?</div>
+  </section>
+
+  <!-- S2: The announcement -->
+  <section class="scene" data-start="3" data-end="10">
+    <div class="kicker" data-in="0">Oct 26, 2026 | Open Real Estate</div>
+    <div class="display" style="font-size:84px" data-in="0.2">4 BROKERAGE GROUPS.<br><span class="aqua">1 LISTING SYSTEM.</span></div>
+    <div class="chips">
+      <div class="chip" data-in="1.3">AGNT<span>eXp Realty + NextHome</span></div>
+      <div class="chip" data-in="2.0">HomeServices of America</div>
+      <div class="chip" data-in="2.7">Keller Williams</div>
+      <div class="chip real" data-in="3.4">Real REMAX Group</div>
+    </div>
+    <div class="small" style="margin-top:34px" data-in="3.9">Disclosure: I'm an agent with Real. Real REMAX Group is one of the four founders.</div>
+  </section>
+
+  <!-- S3: How it works -->
+  <section class="scene" data-start="10" data-end="18">
+    <div class="kicker" data-in="0">How it works</div>
+    <div class="display" style="font-size:92px" data-in="0.15">ENTER ONCE.<br><span class="aqua">SENT EVERYWHERE.</span></div>
+    <div class="flow">
+      <div class="house" data-in="0.9">
+        <svg viewBox="0 0 120 110"><path d="M10 52 L60 10 L110 52 L110 104 L10 104 Z" fill="#050E3D"/><rect x="48" y="66" width="24" height="38" fill="#FFFFFF"/></svg>
+        <div>YOUR LISTING</div>
+      </div>
+      <svg class="lines" viewBox="0 0 920 560" preserveAspectRatio="none">
+        <path class="draw" data-in="1.6" d="M460 202 C 460 300, 145 310, 145 410" stroke="#00FBF0" stroke-width="6" fill="none"/>
+        <path class="draw" data-in="1.9" d="M460 202 L 460 410" stroke="#00FBF0" stroke-width="6" fill="none"/>
+        <path class="draw" data-in="2.2" d="M460 202 C 460 300, 775 310, 775 410" stroke="#00FBF0" stroke-width="6" fill="none"/>
+      </svg>
+      <div class="dest" style="left:0" data-in="2.4">THE MLS</div>
+      <div class="dest" style="left:315px" data-in="2.7">HOME SEARCH SITES</div>
+      <div class="dest" style="left:630px" data-in="3.0">OTHER BROKERAGES</div>
+    </div>
+    <div class="display h3 sea" style="margin-top:50px" data-in="5.0">FREE FOR ANY<br>BROKERAGE TO JOIN</div>
+  </section>
+
+  <!-- S4: Chicago -->
+  <section class="scene" data-start="18" data-end="28">
+    <div class="kicker" data-in="0">Why now? Private listings</div>
+    <div class="display h2" data-in="0.15">CHICAGO =<br><span class="coral">GROUND ZERO</span></div>
+    <div class="tl">
+      <div class="tl-item" data-in="2.2"><div class="when">APR<br>2026</div><div class="what">MRED, Chicago's MLS, takes its private listing network national, backed by Compass</div></div>
+      <div class="tl-item" data-in="4.6"><div class="when">MAY<br>2026</div><div class="what">Zillow sues MRED and Compass in federal court</div></div>
+      <div class="tl-item" data-in="6.6"><div class="when">SEP<br>2026</div><div class="what">Judge denies Zillow's injunction and sends its MRED claims to arbitration<i>Not a final ruling.</i></div></div>
+    </div>
+  </section>
+
+  <!-- S5: Fine print -->
+  <section class="scene" data-start="28" data-end="37">
+    <div class="kicker" data-in="0">Read this part</div>
+    <div class="display h2" data-in="0.15">THE <span class="coral">FINE PRINT</span></div>
+    <div class="rows">
+      <div class="row" data-in="1.0"><div class="big">NOT LIVE YET</div><div class="sub">Target launch: early 2027</div></div>
+      <div class="row" data-in="3.2"><div class="big">PARTICIPANT-ONLY LISTINGS STILL ALLOWED</div><div class="sub">Brokers can choose no public marketing</div></div>
+      <div class="row" data-in="5.6"><div class="big">HOW IT MAKES MONEY: NOT DECIDED</div><div class="sub">Per the founders</div></div>
+    </div>
+  </section>
+
+  <!-- S6: Studies -->
+  <section class="scene" data-start="37" data-end="50">
+    <div class="kicker" data-in="0">Does private cost you money?</div>
+    <div class="display h3" data-in="0.15">THE STUDIES <span class="coral">DISAGREE</span></div>
+    <div class="cards">
+      <div class="card" data-in="1.4">
+        <div class="src aqua">ZILLOW</div>
+        <div class="meta">2025 study of<br>2023 to 2024 sales</div>
+        <div class="num" data-count="1.5" data-count-in="1.6">1.5%</div>
+        <div class="lbl">LESS</div>
+        <div class="desc">Median price, homes sold off the MLS vs. on it</div>
+      </div>
+      <div class="card" data-in="5.2">
+        <div class="src aqua">COMPASS</div>
+        <div class="meta">Its own data,<br>Apr 2025 to Mar 2026</div>
+        <div class="num" data-count="4.6" data-count-in="5.4">4.6%</div>
+        <div class="lbl">MORE</div>
+        <div class="desc">Private-first marketing vs. straight to the open market</div>
+      </div>
+    </div>
+    <div class="stamp" data-in="9.4" data-stamp="1">BOTH HAVE A STAKE</div>
+  </section>
+
+  <!-- S7: CTA -->
+  <section class="scene" data-start="50" data-end="57">
+    <div class="kicker" data-in="0">Before you sign, ask</div>
+    <div class="display" style="font-size:112px" data-in="0.2">WHO WILL SEE<br>MY HOME,<br><span class="coral">AND WHEN?</span></div>
+    <div class="pill" data-in="3.4">DM "EXPOSURE"</div>
+    <div class="body sea" style="margin-top:26px" data-in="3.8">for my free seller checklist</div>
+  </section>
+
+  <!-- S8: End card -->
+  <div class="endcard" id="endcard" data-start="57" data-end="59.5">
+    <img class="clg" src="assets/clg-logo-cobalt.png" alt="Chicago Luxe Group">
+    <div class="name">Michael Di Giovanni</div>
+    <div class="co">Chicago Luxe Group</div>
+    <div class="realrow"><img src="assets/real-logo-white-transparent.png" alt="Real"><div>Real Broker, LLC</div></div>
+    <div class="dm">DM "EXPOSURE"</div>
+  </div>
+
+  <div class="cap" id="cap"><div id="captext"></div></div>
+
+<script>
+  const DURATION = 59.5;
+  // Spoken script, timed per line (seconds). Matches the Short script in research-and-content.md.
+  const CAPTIONS = [
+    [0.0, 3.0, "If you sell your home next year, this decides who gets to see it."],
+    [3.0, 10.0, "On October 26th, Keller Williams, HomeServices of America, eXp's parent AGNT, and Real REMAX Group launched Open Real Estate."],
+    [10.0, 12.6, "Your agent enters your listing once."],
+    [12.6, 15.6, "It goes to the MLS, the home search sites, and other brokerages."],
+    [15.6, 18.0, "Free for any brokerage to join."],
+    [18.0, 20.2, "Why? Private listings."],
+    [20.2, 22.0, "And Chicago is ground zero."],
+    [22.0, 28.0, "Chicago's MLS, MRED, partnered with Compass on a private listing network, and Zillow sued them both."],
+    [28.0, 32.6, "The fine print: it isn't live yet, the target is early 2027,"],
+    [32.6, 37.0, "and brokers can still keep a listing participant-only."],
+    [37.0, 39.4, "Does private cost you money?"],
+    [39.4, 43.0, "Zillow says off-MLS homes sold for about 1.5% less."],
+    [43.0, 46.6, "Compass says its private-first marketing sells for more."],
+    [46.6, 50.0, "Both have skin in the game."],
+    [50.0, 53.4, "So before you sign, ask one question: who will see my home, and when?"],
+    [53.4, 57.0, "DM me EXPOSURE for my checklist."],
+  ];
+
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const easeOut = x => 1 - Math.pow(1 - x, 3);
+  const backOut = x => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+
+  const scenes = [...document.querySelectorAll('.scene')];
+  const endcard = document.getElementById('endcard');
+  const brand = document.getElementById('brand');
+  const progress = document.getElementById('progress');
+  const capBox = document.getElementById('cap');
+  const capText = document.getElementById('captext');
+
+  document.querySelectorAll('path.draw').forEach(p => {
+    const len = p.getTotalLength();
+    p.style.strokeDasharray = len;
+    p.dataset.len = len;
+  });
+
+  function sceneOpacity(t, s, e) {
+    const fi = clamp((t - s) / 0.35, 0, 1);
+    const fo = clamp((e - t) / 0.3, 0, 1);
+    return Math.min(fi, fo);
+  }
+
+  window.__DURATION = DURATION;
+  window.__render = function (t) {
+    progress.style.width = (clamp(t / DURATION, 0, 1) * 1080) + 'px';
+
+    for (const sc of scenes) {
+      const s = +sc.dataset.start, e = +sc.dataset.end;
+      const visible = t >= s - 0.01 && t <= e + 0.01;
+      sc.style.opacity = visible ? sceneOpacity(t, s, e) : 0;
+      if (!visible) continue;
+      const lt = t - s;
+      sc.querySelectorAll('[data-in]').forEach(el => {
+        const p = clamp((lt - +el.dataset.in) / 0.5, 0, 1);
+        if (el.tagName.toLowerCase() === 'path') {
+          el.style.strokeDashoffset = (1 - easeOut(p)) * +el.dataset.len;
+          return;
+        }
+        if (el.dataset.stamp) {
+          const k = backOut(p);
+          el.style.opacity = p;
+          el.style.transform = `rotate(-3deg) scale(${0.6 + 0.4 * k})`;
+          return;
+        }
+        el.style.opacity = easeOut(p);
+        el.style.transform = `translateY(${(1 - easeOut(p)) * 40}px)`;
+      });
+      sc.querySelectorAll('[data-count]').forEach(el => {
+        const target = +el.dataset.count;
+        const p = easeOut(clamp((lt - +el.dataset.countIn) / 1.2, 0, 1));
+        el.textContent = (target * p).toFixed(1) + '%';
+      });
+    }
+
+    const es = +endcard.dataset.start;
+    const eo = clamp((t - es) / 0.4, 0, 1);
+    endcard.style.opacity = eo;
+    brand.style.opacity = 1 - eo;
+
+    const line = CAPTIONS.find(c => t >= c[0] && t < c[1]);
+    if (line && t < es) {
+      capText.textContent = line[2];
+      capBox.style.opacity = 1;
+    } else {
+      capBox.style.opacity = 0;
+    }
+  };
+  window.__render(0);
+</script>
+</body>
+</html>

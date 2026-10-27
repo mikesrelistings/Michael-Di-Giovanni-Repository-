@@ -24,6 +24,9 @@ How these were checked: web search of trade press (HousingWire, Real Estate News
 | Announced Oct 26, 2026 via Business Wire, Austin, Texas dateline | [1] [2] |
 | Founders: AGNT (eXp Realty, NextHome), HomeServices of America, Keller Williams, Real REMAX Group | [1] [4] [5] |
 | Enter a listing once; shared with member brokerages and syndicated to MLSs, portals and other authorized recipients | [1] [4] |
+| Listings use nationally standardized fields | [7] |
+| The founding companies will fund the initial infrastructure | [7] |
+| Critics call it "a proposal, not a platform": there is no software to log into today | [7] [29] |
 | Designed to work alongside MLSs. Founders say it is not a national MLS and does not replace local MLSs | [4] [6] [9] |
 | Free for any brokerage to join as a participating member | [1] [3] |
 | Early participants named: Brown Harris Stevens, Lamacchia Realty, Samson Properties, Windermere | [4] [5] |
@@ -231,7 +234,7 @@ Starred sources are the ones to click before posting.
 4. \* HousingWire, "Everything we know so far about Open Real Estate": https://www.housingwire.com/articles/open-real-estate-initiative/
 5. Real Estate News, Oct 26, 2026: https://www.realestatenews.com/2026/10/26/4-major-brokerage-firms-unveil-open-real-estate-listings-platform
 6. HousingWire, "Open Real Estate aims to widen access to listings and reduce data silos": https://www.housingwire.com/articles/open-real-estate-launch/
-7. HousingWire, "A new listing data platform tests the private network model": https://www.housingwire.com/articles/open-real-estate-data-initiative/
+7. \* HousingWire, "A new listing data platform tests the private network model" (Tracey Velt, Oct 26, 2026): https://www.housingwire.com/articles/open-real-estate-data-initiative/
 8. WRE News, participant-only option: https://wrenews.com/open-real-estate-national-listing-network-participant-only-2026/
 9. RISMedia, Oct 26, 2026: https://www.rismedia.com/2026/10/26/breaking-four-brokerage-giants-launch-new-shared-infrastructure-listings/
 10. \* The Real Deal, Oct 26, 2026 (Compass statement): https://therealdeal.com/texas/2026/10/26/brokerages-challenge-private-listings-with-data-sharing-deal/
@@ -253,6 +256,7 @@ Starred sources are the ones to click before posting.
 26. \* BAM, launch article and open letter: https://nowbam.com/4-major-brokerages-join-forces-to-launch-open-real-estate-amid-private-listing-battles/
 27. BAM, founding CEOs interview: https://nowbam.com/founding-ceos-reveal-whats-next-for-open-real-estate-in-exclusive-interview/
 28. Propmodo, alliance to counter private listing networks: https://propmodo.com/major-brokerages-form-alliance-to-counter-private-listing-networks/
+29. Robert Schantz (Substack, opinion), "Four Giants Just Drew the Line": https://robertschantz.substack.com/p/four-giants-just-drew-the-line-independents
 
 Source posts reviewed:
 - https://www.instagram.com/reel/De-GyW5SluM/ (transcript via vidIQ)
