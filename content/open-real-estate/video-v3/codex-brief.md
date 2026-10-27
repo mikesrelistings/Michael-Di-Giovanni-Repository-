@@ -31,6 +31,34 @@ Canonical record: `Codex-1\outputs\updated-listing-youtube-short-2026-10-24\PROD
 - Private Drive review master for Michael. Not posted, not scheduled.
 - **Michael's standing rule for every video or carousel render:** put the direct, clickable link (and the file itself when the chat allows it) right in the chat with Michael, so he can open and view it in one tap.
 
+## Match v14 (Michael, Oct 27)
+
+Michael wants this video made the same way as the Updated Listing v14. Build it from the v14 project / `clg-reel` package and swap only the script, the topic graphics and the presenter clips. Keep everything else.
+
+The v14 recipe, from Codex's own records (`updated-listing-production-record.md`, `updated-listing-v4-brief.md`) and the v5 to v14 file names. Claude Code could not play v14 itself (Drive limits its downloads to 10 MB), so treat the file-name items as inferred and the v14 project as the source of truth:
+
+- Michael standing, HeyGen Avatar III, low expressiveness, restrained shoulders and hands, smaller fully visible framing, transparent WebM chapter clips. The consistent blue suit (v9), jacket buttoned (v7).
+- The Higgsfield-finished bright Chicago architectural analysis studio (`higgsfield-studio-background-v4.png`, job `4d55b02b-cac0-4b79-8929-84b204499e08`): skyline, large display wall, cutaway-home display, open presenter floor. **Reuse it as-is (0 new Higgsfield credits)** unless a topic-specific variant is clearly better, in which case it goes in the quote.
+- Script-driven title cards; objects transfer from the display wall into labeled cards at exact transcript timings; brief full-screen proof moments when detail needs the whole frame.
+- Word-exact captions in all caps (v6.2); CLG midnight navy, aqua, coral, seaglass and white; restrained perimeter and rim glow (v12, v13); upbeat music (v11); v14 hook pacing.
+- Close lockup: exact CLG logo, 773-583-2274, Real Broker disclosure, and "Real estate redefined." For this video it is on screen only; Michael's script stays as written.
+
+Display-wall beats for this script:
+
+| Line | Display wall / title cards |
+|---|---|
+| Who controls your home's listing? | Hook card: WHO CONTROLS YOUR LISTING? |
+| Four of the nation's largest... | OPEN REAL ESTATE title card |
+| That's eXp and NextHome... | Four logo-free text cards, one per founder, plus the on-screen disclosure |
+| Agents enter a listing once... will send it... | A listing card transfers out of the cutaway home into three tiles: MLS, PORTALS, APPROVED SITES. "Target launch: early 2027" label |
+| It works alongside the MLS... | WORKS WITH THE MLS. DOESN'T REPLACE IT. |
+| More homes are being marketed privately... Compass... | Split card: PRIVATE NETWORK vs OPEN ACCESS |
+| Open Real Estate is betting the other way... | MORE EXPOSURE FOR SELLERS / MORE HOMES FOR BUYERS |
+| If you're selling in Chicago... | SELLING IN CHICAGO? WHO WILL SEE YOUR HOME? |
+| DM LISTING... | DM "LISTING", then the close lockup and the "Not legal or tax advice." card |
+
+Differences from v14: about 60 seconds instead of 93; the footer on every frame and the "Source: HousingWire" chip from Michael's spec sit on top of the v14 look.
+
 ## Script (final production wording; 146 words, about 52 to 58 seconds of speech)
 
 Michael's script with one routine factual edit: "sends" became "will send", because the platform is not live yet (target launch Q1 2027; the article says the companies plan to develop it). One caption line per row is in `script-lines.txt` next to this file.
@@ -76,7 +104,7 @@ Production additions (agent decisions, already settled):
 
 ## Cost quote (gate 1)
 
-Quote the real credit cost per provider before submitting any paid job. Last known balances are stale: HeyGen 218 add-on credits read before the Oct 25 renders; Codex's Higgsfield account md0274@gmail.com on a free plan. The Higgsfield account connected to Claude Code is a different read (951.51 credits, Plus plan), so state which account the quote uses.
+Quote the real credit cost per provider before submitting any paid job. Expected scope: HeyGen presenter chapter clips covering about 55 seconds of speech in the v14 suit; Higgsfield only if a new background is chosen. Last known balances are stale: HeyGen 218 add-on credits read before the Oct 25 renders; Codex's Higgsfield account md0274@gmail.com on a free plan. The Higgsfield account connected to Claude Code is a different read (951.51 credits, Plus plan), so state which account the quote uses.
 
 ## QA before delivery
 

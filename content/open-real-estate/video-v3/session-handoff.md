@@ -5,7 +5,8 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 ## Status
 
 - **Version chosen (Michael, Oct 27): HeyGen, Michael on camera.** One build, one operator (Codex).
-- Production brief is final: `codex-brief.md` (this folder; Drive copy "Codex Brief - CLG Open Real Estate Short" in Content - Chicago Luxe). Caption lines: `script-lines.txt` (14 lines, 146 words, future-tense edit applied).
+- **Direction (Michael, Oct 27): make it the same way as the Updated Listing v14.** The brief's "Match v14" section has the recipe and the display-wall beats. Reuse the approved v14 studio background, so the expected quote is HeyGen presenter clips only.
+- Production brief is final: `codex-brief.md` (this folder; Drive copy "Codex Brief v2 - CLG Open Real Estate Short" in Content - Chicago Luxe; the first Drive copy is marked superseded). Caption lines: `script-lines.txt` (14 lines, 146 words, future-tense edit applied).
 - The faceless ElevenLabs "Lara" build from another Claude Code session is retired. Its Drive folder ("Open Real Estate Reel - build files (Claude Code, 2026-10-27)") now has `SUPERSEDED - READ FIRST.md`; its own files were left unchanged.
 - Nothing has been rendered, spent, uploaded, scheduled or posted for this video.
 - **Next step: Codex produces the paid-credit quote.**
@@ -24,7 +25,7 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 ## Kickoff prompt for Codex (Michael can paste this)
 
-> Read the brief "Codex Brief - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Build it with my HeyGen avatar in the v14 medium-blue standing suit and a Higgsfield background, using the clg-reel template. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Deliver a private review master to Drive. Do not post or schedule anything until I say "post it".
+> Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
 ## Standing rule from Michael (Oct 27)
 
