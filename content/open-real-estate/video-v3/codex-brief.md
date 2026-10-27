@@ -48,7 +48,8 @@ Display-wall beats for this script:
 
 | Line | Display wall / title cards |
 |---|---|
-| Who controls your home's listing? | Hook card: WHO CONTROLS YOUR LISTING? |
+| (0.0 to about 1.5s, before any speech or title) | **Cold-open visual hook (Michael, Oct 27, for v2):** fast push-in on a For Sale sign in front of a home, or on a phone showing a listing, with a bold on-screen question WHO CONTROLS **YOUR** LISTING? (YOUR emphasized). Grabs attention in the first 1 to 2 seconds. No brokerage, portal or MLS logos, no real address or listing data. Footer and Real logo still on screen. |
+| Who controls your home's listing? | Michael's first line lands as the hook resolves. Hook card: WHO CONTROLS YOUR LISTING? |
 | Four of the nation's largest... | OPEN REAL ESTATE title card |
 | That's eXp and NextHome... | Four logo-free text cards, one per founder, plus the on-screen disclosure |
 | Agents enter a listing once... will send it... | A listing card transfers out of the cutaway home into three tiles: MLS, PORTALS, APPROVED SITES. "Target launch: early 2027" label |
@@ -83,6 +84,8 @@ From Michael's spec:
 - Footer on every frame: "Chicago Luxe Group | powered by Real Broker, LLC", with the Real logo. Both are required: the logo alone does not satisfy state requirements. Use the exact logo files; never redraw or generate a logo.
 - "Source: HousingWire" chip on screen.
 - Final card: "Not legal or tax advice." plus the DM LISTING call to action.
+
+- v2 opens cold on the visual hook above, before any talking or title, and the rest of the video is built around it: the same sign or phone listing returns in the listing-card beat and in the SELLING IN CHICAGO? WHO WILL SEE YOUR HOME? card. The script words stay as written.
 
 Production additions (agent decisions, already settled):
 

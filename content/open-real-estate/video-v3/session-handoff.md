@@ -34,6 +34,8 @@ Michael and Codex adjusted the voice, and v2 switches to a burgundy suit with gr
 - Codex: all production (voice, suit, HeyGen, edit, render, Drive upload).
 - Claude Code: read-only watching and review. No HeyGen, Higgsfield or render jobs; no edits to Codex's Drive files or the STATUS doc. Posts the v2 link in chat and checks its VERIFY.md against this brief.
 
+v2 also opens with a cold visual hook (Michael, 5:30 PM CT): a fast push-in on a For Sale sign or a phone showing a listing, with WHO CONTROLS YOUR LISTING? on screen, before any talking or title, and the video is built around it (see the brief's display-wall table). Any new Higgsfield job for the push-in shot needs a credit quote to Michael first. Codex uploads a short hook preview and stills so Claude Code can review the opening. Nothing posts before "post it".
+
 ## Delivered v1 (4:30 PM CT)
 
 Codex delivered the review master: `CLG-Open-Real-Estate-Review-Ready.mp4` (Drive ID 12PV_v0hAICu0BkSZNeTPoVCq_cGwIFUh, 33.5 MB, 59.8s, 1080x1920, 30 fps), plus VERIFY.md and PRODUCTION.md, in Content - Chicago Luxe > Videos > CLG Open Real Estate Short. HeyGen used 10 add-on credits (47 left). Higgsfield used 0.
