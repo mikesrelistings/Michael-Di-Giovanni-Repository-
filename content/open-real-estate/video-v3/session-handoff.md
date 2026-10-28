@@ -28,6 +28,18 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
+## Current review master (Codex, 6:49 PM CT Oct 27)
+
+Same Drive file, replaced in place: `CLG-Open-Real-Estate-Review-Ready.mp4` (ID 12PV_v0hAICu0BkSZNeTPoVCq_cGwIFUh), 63.3s, 33,786,210 bytes (size matches VERIFY.md, SHA-256 67E2D822...7BDF). Per Codex: strong "Who controls your listing?" public-vs-private visual hook, Michael's own voice settings restored, burgundy suit with gray shirt (look b5f6aff5...), official founder logos, "Real Ree-Max" spoken without "Group". -14.54 LUFS, -0.32 dBTP. A 91.3s v3 with a 3D phone was built at 6:40 PM and replaced by this one.
+
+Claude Code review (from VERIFY/PRODUCTION/STATUS; the MP4 is over the 10 MB download limit):
+- Pass: format, length, loudness, voice and wardrobe per Codex.
+- Off spec: true peak -0.32 dBTP (spec -1 or lower).
+- Needs Michael's call: official AGNT, HomeServices, Keller Williams and Real/REMAX logos replaced the text-only founder cards; using other brokerages' marks in an ad goes to Real's compliance team or counsel. The founder is "Real REMAX Group"; the spoken line drops "Group".
+- Not confirmed: hook lands in the first 1 to 2 seconds before any talking; Source chip; launch label; "Not legal or tax advice." card; captions word for word.
+- HeyGen add-on credits: 1 left, so any further presenter re-render needs more credits.
+- Still open: Grok Bot CoS QA, Michael's review, "post it".
+
 ## v2 in progress (Codex, from 4:45 PM CT)
 
 Michael and Codex adjusted the voice, and v2 switches to a burgundy suit with grey (or burgundy with whatever pairs best). Lanes, so the two agents never overlap:
