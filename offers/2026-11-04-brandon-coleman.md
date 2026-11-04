@@ -7,9 +7,9 @@ Source: Michael's iMessage screenshots, 11:27 AM, 11/4/2026.
 | Brandon asked | 11/3, 2:32 PM: "Can we offer 100 cash" | 11/4, 11:09 AM: "Can we offer 150k on this" | 11/3, 2:07 PM, group thread with MM: "Can we offer 270 on this" |
 | Michael replied | "Yes" (3:37 PM) | "OK, just make sure you let the attorneys know..." | "Yes, I get it started shortly" |
 | Price | $100,000 | $150,000 | $270,000 (read as thousands, matches his history) |
-| Financing | Cash, Para 8b | Not stated. Default Para 8a, Hard Money Lender | Not stated. Default Para 8a, Hard Money Lender |
+| Financing | Cash, Para 8b (per Brandon's text; not reconfirmed) | Hard money, HomeBldrAI, Para 8a (confirmed by Michael 11/4) | Hard money, HomeBldrAI, Para 8a (confirmed by Michael 11/4) |
 | Name on contract | Rich Regardless Realty Group LLC. Signers Brandon Coleman and Martez Malone (confirmed by Michael 11/4) | same | same |
-| Funds proof needed | Proof of funds, $100K | PQL from HomeBldrAI for this address, or proof of funds | PQL for this address, or proof of funds |
+| Funds proof needed | Proof of funds, $100K | HomeBldrAI PQL, requested in Gmail draft 11/4 | HomeBldrAI PQL, requested in Gmail draft 11/4 |
 | MLS #, list price, status | Need MLS | Need MLS | Need MLS. Form autofill: PIN 25022080150000, lot Less Than .25 Acre, Cook |
 | Listing agent | Need MLS | Need MLS | Need MLS |
 | Units / form check | Need MLS | Need MLS | Need MLS. Redfin lists a "#1" unit, so multi-unit. If 5+ units, ask Castle Law about the form |
