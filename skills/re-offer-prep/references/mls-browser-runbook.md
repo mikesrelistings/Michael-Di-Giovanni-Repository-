@@ -25,6 +25,10 @@ This only works in Cowork on Michael's computer with the Claude in Chrome extens
 
 Login screen, two-factor prompt, site permission prompt, captcha, or a page that does not match these steps: stop, leave the tab open, and tell Michael exactly where it stopped. Do not work around it.
 
-## Click path
+## Click path (from Michael, 11/4/2026)
 
-Michael walked Claude through connectMLS Forms on 9/29/2026 (3549 S Indiana) but the click path was not saved. On the next run with Michael watching, write the exact clicks here so later runs need no help.
+1. connectMLS: open the listing.
+2. Additional Information, then write contract. This opens connectMLS Forms with Multi-Board Residential Real Estate Contract 8.0, already filled from MLS: lot size, address, city, state, ZIP, county, PIN.
+3. Fill the rest. Toolbar: Save, Delete, Preview, Send to DocuSign, Send to dotloop, Email. Use Save and Preview only. Do not use any Send or Email button.
+4. Remine: mred.remine.com/docs/transactions/ (Michael reaches it from connectMLS through the tax portal). Year folders, use "2026 Transactions". Brandon's deals live in the Rich Regardless deal.
+5. Still to record on the next watched run: how the saved form is exported or moved into Remine, and how signature tags are placed.
