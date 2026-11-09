@@ -28,6 +28,13 @@ Claude Code cloud session, Oct 27, 2026. Branch `claude/great-knuth-4n2vv7` in `
 
 > Read "Codex Brief v2 - CLG Open Real Estate Short" in my Drive (Content - Chicago Luxe), or `content/open-real-estate/video-v3/codex-brief.md` on branch `claude/great-knuth-4n2vv7` of mikesrelistings/Michael-Di-Giovanni-Repository-. Make it the same way as my Updated Listing v14: build from the v14 project / clg-reel package, same standing blue suit, same Higgsfield studio, same caption and glow style, and swap in this script and its display-wall beats. Before any paid HeyGen or Higgsfield job, send me the exact credit cost and wait for my yes. Put the review master link right in my chat. Do not post or schedule anything until I say "post it".
 
+## Outcome (checked Nov 9, 2026)
+
+- Codex continued past the 63.3s cut to an 89s long-form version: v4 to v7 on Oct 27 and 28, with v6 approved by Michael as the benchmark, then v8 on Oct 29 (`CLG-Open-Real-Estate-v8-October-29.mp4`, 32,220,973 bytes; the same size as `FULL VIDEO - Open Real Estate explained (89s).mp4`).
+- Oct 29: the full video, six Story parts and a 9-slide carousel were emailed to Michael to save and post. A Facebook post "Open Real Estate has been announced..." went up Oct 29 at 9:32 AM; Facebook's Nov 5 insights email showed 67 views.
+- Oct 30: Michael sent a Blotato-hosted link to the video to a contact.
+- Not verified from here: whether it went to YouTube or Instagram.
+
 ## Current review master (Codex, 6:49 PM CT Oct 27)
 
 Same Drive file, replaced in place: `CLG-Open-Real-Estate-Review-Ready.mp4` (ID 12PV_v0hAICu0BkSZNeTPoVCq_cGwIFUh), 63.3s, 33,786,210 bytes (size matches VERIFY.md, SHA-256 67E2D822...7BDF). Per Codex: strong "Who controls your listing?" public-vs-private visual hook, Michael's own voice settings restored, burgundy suit with gray shirt (look b5f6aff5...), official founder logos, "Real Ree-Max" spoken without "Group". -14.54 LUFS, -0.32 dBTP. A 91.3s v3 with a 3D phone was built at 6:40 PM and replaced by this one.
