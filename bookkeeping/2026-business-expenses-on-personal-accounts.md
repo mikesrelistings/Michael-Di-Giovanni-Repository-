@@ -3,6 +3,8 @@
 **For:** Asma (bookkeeper)
 **Purpose:** Track business expenses Michael paid with personal cards/accounts so they get reclassified as business expenses at tax time.
 
+**See also:** accounts-and-recurring-charges.md (which account pays for which recurring service)
+
 ## Confirmed business expenses
 
 | Date | Merchant | Amount | Paid from | Business use | Chime category (wrong) | Receipt |
